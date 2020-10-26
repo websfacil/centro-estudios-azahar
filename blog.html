@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Centro de Estudios Azahar</title>
-        <link rel="icon" type="img/png" href="img/logo.png"/>
+        <link rel="icon" type="img/png" href="img/logo1.png"/>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <link rel="stylesheet"
@@ -16,23 +16,22 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
+            <div class="container">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/psico.html">Psicopedagogia</a></li>
+                        <li><a href="/who.html">Profesores</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/psico.html">Psicopedagogia</a></li>
-                    <li><a href="/who.html">Profesores</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-            
         </header>
 
     
@@ -51,7 +50,7 @@
                         <div class="carousel__track-container">
                             <ul class="carousel__track">
                             <li class="carousel__slide current-slide">
-                                <img class="carousel__img" src="/img/foto1.png">
+                                <img src="img/principal.jpg" alt="Main Photo" class="intro__img">
                             </li>
                             <li class="carousel__slide">
                                 <img class="carousel__img" src="/img/foto2.jpg">
@@ -199,48 +198,90 @@
         
         <!-- LA GALERIA DE IMAGENES-->
         <section class="my-work" id="work">
-            <h2 class="section__title">Known Technologies</h2>
-            <p class="section__subtitle section__subtitle--work">Selection of my range of work</p>
+            <h2 class="section__title">Galeria de Imagenes</h2>
+            <p class="section__subtitle section__subtitle--work">Seleccion de Fotos</p>
 
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-01.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-02.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-03.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-04.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-05.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-06.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-07.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-08.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-09.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-10.jpg" alt="" class="portfolio__img"> 
-                </a>
-            </div>
+                <div class="carousel">
+                    <button class="carousel__button carousel__button--left">
+                        <i class="fas fa-caret-left"></i>
+                    </button>
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img src="img/galeria/foto-1.jpg" alt="Main Photo" class="intro__img">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="img/galeria/foto-2.jpg">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="img/galeria/foto-3.jpg">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="img/galeria/foto-4.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel__button carousel__button--right">
+                        <i class="fas fa-caret-right"></i>
+                    </button>
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+                </div>
+                
+            
         </section>
         
         
+        
+         <!-- Pre Footer -->
+         <div class="pre-footer-line"></div>
+         <section class="pre-footer" id="pre-footer">
+            <h2 class="section__title"></h2>
+
+            <div class="services-pre-footer">
+                <div class="service-pre-footer">
+                    <h3>📚 Docencia</h3>
+                    <ul>
+                        <li>Educación Primaria</li>
+                        <li>Educación Secundaria</li>
+                        <li>Graduado en E.S.O</li>
+                        <li>Bachiller</li>
+                        <li>Pruebas acceso a grados</li>
+                        <li>Universidad</li>
+                    </ul>
+                </div> <!-- service -->
+
+                <div class="service-pre-footer">
+                    <h3>🌝 Psicopedagogia</h3>
+                    <ul>
+                        <li>Orientación y Asesoramiento psicopedagógico</li>
+                        <li>Apoyo en dificultades de aprendizaje</li>
+                        <li>Inteligencia emocional</li>
+                        <li>Administración de test</li>
+                        <li>Pruebas diagnósticas</li>
+                        <li>Déficit de atención con o sin hiperactividad</li>
+                        <li>Trastornos de la lectoescritura</li>
+                    </ul>
+                </div> <!-- service -->
+
+                <div class="service-pre-footer">
+                    <h3>💂🏻 Idiomas</h3>
+                    <ul>
+                        <li>Inglés para niños</li>
+                        <li>Inglés para adultos</li>
+                        <li>Español</li>
+                        <li>Valenciano</li>
+                    </ul>
+                </div> <!-- service -->
+            </div> <!-- services -->
+        </section>
 
         <!-- Footer-->
         <footer class="footer">
-            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> e-mail-aqui@gmail.com</a>
+            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> hola@centroestudiosazahar.es</a>
             <div><i class="fas fa-mobile-alt"></i> +34 627 034 888</div>
             <div class= "social-list-span">Siguenos en nuestras redes sociales:</div>
             <ul class="social-list">

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Centro de Estudios Azahar</title>
-        <link rel="icon" type="img/png" href="img/logo.png"/>
+        <link rel="icon" type="img/png" href="img/logo1.png"/>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <link rel="stylesheet"
@@ -16,23 +16,22 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
+            <div class="container">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/psico.html">Psicopedagogia</a></li>
+                        <li><a href="/who.html">Profesores</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/psico.html">Psicopedagogia</a></li>
-                    <li><a href="/who.html">Profesores</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-            
         </header>
 
     
@@ -41,9 +40,14 @@
             <h2 class="section__title section__title--about">Donde nos puedes encontrar</h2>
             <div class="about-me__body">
                 <p>
-                    Estamos ubicados en la calle bla bla bla numero bla.
-                    Si vienes por la autopista te recomendamos esto si vienes 
-                    por alli te recomendamos lo otro.
+                    La acedemia esta situada en la <strong>calle Pérez Dolz nº3</strong>, <strong>Castellon</strong>, <strong>Valencia.</strong>
+                </p>
+                <p>
+                    Si vienes en transporte publico: 
+                    <br>
+                    <i class="fas fa-bus" style="color: red;"></i> Linas: 1, 2, 3 y 4
+                </p>
+                <p>
                     Si tienes cualquier duda o pregunta, no dudes en llamarnos! &#128522;
                 </p>
             </div>
@@ -52,7 +56,7 @@
                 <div class="service">
                     <h3>Horarios:  &#9201;</h3>
                     <ul>
-                        <li><strong>Lunes a viernes:</strong> de 10:00 &#9201; a 13:30 y de 15:30 a 20:30</li>
+                        <li><strong>Lunes a viernes:</strong> de 10:00 a 13:30 y de 15:30 a 20:30</li>
                         <li><strong>Sabados:</strong> de 10:00 a 14:00</li>
                     </ul>
                 </div> <!-- service -->
@@ -60,8 +64,8 @@
                 <div class="service">
                     <h3>Escribenos o llamanos:</h3>
                     <ul>
-                        <li><strong>Telefono:</strong> 627 034 888</li>
-                        <li><strong>E-mail:</strong> blablabla@gfmail.com</li>
+                        <li><strong>Telefono:</strong> (+34) 627 034 888</li>
+                        <li><strong>E-mail: </strong>hola@centroestudiosazahar.es</li>
                     </ul>
                 </div> <!-- service -->
             </div>
@@ -73,19 +77,78 @@
 
         <!-- About Me-->
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Quieres Trabajar con nosotros?</h2>
+            <h2 class="section__title section__title--about">¡Únete a nuestro equipo!</h2>
+            <p class="section__subtitle section__subtitle--intro">Buscamos genete como <strong>TU</strong></p>
             <div class="about-me__body">
                 <p>
-                    BLA bla bla bla bla
-                    Borja esta seccion a mi me parece relevante da imagen de marca :)
+                    Nuestra cultura está basada en la <strong>adaptación al cambio</strong>, 
+                    realizando un trabajo con calidad y eficacia, 
+                    donde la <strong>iniciativa</strong> y el <strong>trabajo en equipo</strong> son valores a destacar, 
+                    siempre unidos al respeto por las personas. Por estas razones somos una empresa 
+                    comprometida con la igualdad en el empleo, promoviendo un entorno 
+                    libre de discriminación de cualquier tipo, donde las 
+                    personas puedan crecer profesionalmente en funcion de valía y potencial.
+                    <br><br>
+                    Si buscas un trabajo <strong>dinámico, estabilidad y deseas enriquecer y desarrollar 
+                    tu carrera profesional</strong> en un entorno de respeto y diversidad te ofrecemos 
+                    la posibilidad de encontrarlo trabajando con nosotros.
+                    <br><br>
+                    <strong>¿Quieres Trabajar con nosotros? </strong>
+                    Envianos tu curriculum a la direccion de correo electronico: 
+                    <a href="mailto:angel.de.enrique@gmail.com" class="footer-link">hola@centroestudiosazahar.es</a>.
                 </p>
             </div>
+        </section>
+
+        
+        
+         <!-- Pre Footer -->
+         <div class="pre-footer-line"></div>
+         <section class="pre-footer" id="pre-footer">
+            <h2 class="section__title"></h2>
+
+            <div class="services-pre-footer">
+                <div class="service-pre-footer">
+                    <h3>📚 Docencia</h3>
+                    <ul>
+                        <li>Educación Primaria</li>
+                        <li>Educación Secundaria</li>
+                        <li>Graduado en E.S.O</li>
+                        <li>Bachiller</li>
+                        <li>Pruebas acceso a grados</li>
+                        <li>Universidad</li>
+                    </ul>
+                </div> <!-- service -->
+
+                <div class="service-pre-footer">
+                    <h3>🌝 Psicopedagogia</h3>
+                    <ul>
+                        <li>Orientación y Asesoramiento psicopedagógico</li>
+                        <li>Apoyo en dificultades de aprendizaje</li>
+                        <li>Inteligencia emocional</li>
+                        <li>Administración de test</li>
+                        <li>Pruebas diagnósticas</li>
+                        <li>Déficit de atención con o sin hiperactividad</li>
+                        <li>Trastornos de la lectoescritura</li>
+                    </ul>
+                </div> <!-- service -->
+
+                <div class="service-pre-footer">
+                    <h3>💂🏻 Idiomas</h3>
+                    <ul>
+                        <li>Inglés para niños</li>
+                        <li>Inglés para adultos</li>
+                        <li>Español</li>
+                        <li>Valenciano</li>
+                    </ul>
+                </div> <!-- service -->
+            </div> <!-- services -->
         </section>
         
         
         <!-- Footer-->
         <footer class="footer">
-            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> e-mail-aqui@gmail.com</a>
+            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> hola@centroestudiosazahar.es</a>
             <div><i class="fas fa-mobile-alt"></i> +34 627 034 888</div>
             <div class= "social-list-span">Siguenos en nuestras redes sociales:</div>
             <ul class="social-list">
@@ -97,16 +160,6 @@
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://github.com/angelenriquep">
                         <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/angel-enrique-a56283127/">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/angel-enrique-a56283127/">
-                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">

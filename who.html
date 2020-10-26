@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Centro de Estudios Azahar</title>
-        <link rel="icon" type="img/png" href="img/logo.png"/>
+        <link rel="icon" type="img/png" href="img/logo1.png"/>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <link rel="stylesheet"
@@ -16,32 +16,34 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
+            <div class="container">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/psico.html">Psicopedagogia</a></li>
+                        <li><a href="/who.html">Profesores</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/psico.html">Psicopedagogia</a></li>
-                    <li><a href="/who.html">Profesores</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a href="/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-            
         </header>
 
     
         <!-- About Me-->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Quien somos</h2>
-            <p class="section__subtitle section__subtitle--about">Nuestra pasion es enseñar &#128218;&#128218;&#128218;</p>
+            <p class="section__subtitle section__subtitle--about">Nuestra pasion es enseñar</p>
 
             <div class="about-me__body">
+
+                <img src="img/logo-completo.png" alt="Angel leaning in blablabla" class="about-me__img">
+
                 <p>
                     Somos un Centro de Estudios con varios años de trayectoria. 
                     Azahara Catalán se encuentra al frente de este maravilloso proyecto, 
@@ -56,103 +58,161 @@
                     que más tarde se aplicaron en un colegio del Grao de Castellón y finalmente 
                     en el Centro de Estudios. 
                 </p>
+
             </div>
+        </section>
 
-            <img src="img/logo-vertical.png" alt="Angel leaning in blablabla" class="about-me__img">
 
-            <div class="about-me__body">
-                <p>
-                    Centro de Estudios AZAHAR combina los elementos psicopedagógicos con 
-                    los medios docentes. Tiene un sistema de aprendizaje propio basado en la 
-                    comprensión y la gestión de las emociones. Inculca los valores que han sido 
-                    un elemento fundamental para la consecución de sus éxitos (autoestima, confianza, 
-                    y respeto hacia los demás y uno mismo). Además, Centro de Estudios AZAHAR 
-                    colabora con un gran equipo que está detrás trabajando y perfeccionando cada detalle.
-                    Azahara tiene claro que hoy en día la educación no es de calidad: 
-                    “Los niños estudian desmotivados y no a todos les sirve el modo 
-                    o la forma en que se enseña”. Por ello, se centra en la autoestima 
-                    y en la confianza, los escucha y los motiva. “Es muy importante hablar 
-                    con nuestros alumnos y conocerlos. Es básico para nosotros ya que cada 
-                    niño/a presenta unas características diferentes por lo que cada uno requiere 
-                    hábitos distintos. Y es que escuchándoles y comprendiéndoles se consigue un
-                     buen rendimiento académico”.
-                </p>
-            </div>
 
-            <div class="services-who">
-                <div class="service-who">
-                    <ul>
-                        <div class="card">
-                            <img src="/img/Azahara.png" alt="Azahara">
-                            <h3>Azahara</h3>
-                            <p class="title">CEO & Founder, Example</p>
-                            <p>Harvard University</p>
-                            <p>Intento poner mucho amor en lo que hago</p>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
+        <div class="grey-container">
+            <!-- About Me-->
+            <section class="who" id="who">
+                <h2 class="section__title section__title--who" style="color: var(--clr-accent-blue);">Profesores</h2>
+                <div class="who__body">
+                    <div class="services-who">
+                        <div class="service-who">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="/img/profesores/alejandra.png" alt="Alejandra">
+                                    <p class="title" style="color: var(--clr-accent-blue);"><strong>Azahara</strong></p>
+                                    <div class="card-text">
+                                        <p class="title-2"><strong>Profesora</strong></p>
+                                        <p>Hobbies: </p> 
+                                        <p>Nadar y el senderismo. &#129341; </p>
+                                        <p style="color: var(--clr-accent-blue);">Saber mas ></p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Azahara</h3>
+                                    <p>
+                                        Durante mi adolescencia me di cuenta que disfrutaba de las clases de ciencias, en
+                                        especial las de Biología, y esto me llevó a estudiar el Grado de Bitecnología Biomédica.
+                                        Me encanta transmitir a los alumnos esta pasión por la ciencia, y ver como poco a
+                                        poco crecen y aprenden.
+                                        El aprendizaje es como la escalada; resulta duro y requiere de mucho esfuerzo, pero si
+                                        vas bien preparado:
+                                        
+                                        ¡Alcanzar la cima siempre es posible!
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                        </div> <!-- service -->
+
+                        <div class="service-who">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="/img/profesores/alejandra.png" alt="Alejandra">
+                                    <p class="title" style="color: var(--clr-accent-green);"><strong>Borja</strong></p>
+                                    <div class="card-text">
+                                        <p class="title-2"><strong>Profesora</strong></p>
+                                        <p>Hobbies: </p> 
+                                        <p>Nadar y el senderismo. &#129341; </p>
+                                        <p style="color: var(--clr-accent-green);">Saber mas ></p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Borja</h3>
+                                    <p>
+                                        Durante mi adolescencia me di cuenta que disfrutaba de las clases de ciencias, en
+                                        especial las de Biología, y esto me llevó a estudiar el Grado de Bitecnología Biomédica.
+                                        Me encanta transmitir a los alumnos esta pasión por la ciencia, y ver como poco a
+                                        poco crecen y aprenden.
+                                        El aprendizaje es como la escalada; resulta duro y requiere de mucho esfuerzo, pero si
+                                        vas bien preparado:
+                                        
+                                        ¡Alcanzar la cima siempre es posible!
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
                         </div>
+                    
+
+                        <div class="service-who">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="/img/profesores/alejandra.png" alt="Alejandra">
+                                    <p class="title" style="color: var(--clr-accent-yellow);"><strong>Alejandra</strong></p>
+                                    <div class="card-text">
+                                        <p class="title-2"><strong>Profesora</strong></p>
+                                        <p>Hobbies: </p> 
+                                        <p>Nadar y el senderismo. &#129341; </p>
+                                        <p style="color: var(--clr-accent-yellow);">Saber mas ></p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Alejandra</h3>
+                                    <p>
+                                        Durante mi adolescencia me di cuenta que disfrutaba de las clases de ciencias, en
+                                        especial las de Biología, y esto me llevó a estudiar el Grado de Bitecnología Biomédica.
+                                        Me encanta transmitir a los alumnos esta pasión por la ciencia, y ver como poco a
+                                        poco crecen y aprenden.
+                                        El aprendizaje es como la escalada; resulta duro y requiere de mucho esfuerzo, pero si
+                                        vas bien preparado:
+                                        
+                                        ¡Alcanzar la cima siempre es posible!
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        
+         <!-- Pre Footer -->
+         <!-- <div class="pre-footer-line"></div>-->
+         <section class="pre-footer" id="pre-footer">
+            <h2 class="section__title"></h2>
+
+            <div class="services-pre-footer">
+                <div class="service-pre-footer">
+                    <h3>📚 Docencia</h3>
+                    <ul>
+                        <li>Educación Primaria</li>
+                        <li>Educación Secundaria</li>
+                        <li>Graduado en E.S.O</li>
+                        <li>Bachiller</li>
+                        <li>Pruebas acceso a grados</li>
+                        <li>Universidad</li>
                     </ul>
                 </div> <!-- service -->
 
-                <div class="service-who">
+                <div class="service-pre-footer">
+                    <h3>🌝 Psicopedagogia</h3>
                     <ul>
-                        <div class="card">
-                        <img src="/img/Azahara.png" alt="Borja">
-                        <h3>Borja Enrique</h3>
-                        <p class="title">CEO & Founder, Example</p>
-                        <p>Harvard University</p>
-                        <p>Me gusta el futobol y ser tranquilo</p> &#128526;
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        </div>
+                        <li>Orientación y Asesoramiento psicopedagógico</li>
+                        <li>Apoyo en dificultades de aprendizaje</li>
+                        <li>Inteligencia emocional</li>
+                        <li>Administración de test</li>
+                        <li>Pruebas diagnósticas</li>
+                        <li>Déficit de atención con o sin hiperactividad</li>
+                        <li>Trastornos de la lectoescritura</li>
                     </ul>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- About Me-->
-        <section class="my-work" id="work">
-            <h2 class="section__title">Known Technologies</h2>
-            <p class="section__subtitle section__subtitle--work">Selection of my range of work</p>
+                </div> <!-- service -->
 
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-01.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-02.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-03.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-04.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-05.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-06.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-07.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-08.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-09.jpg" alt="" class="portfolio__img">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="./img/img-work-10.jpg" alt="" class="portfolio__img"> 
-                </a>
-            </div>
+                <div class="service-pre-footer">
+                    <h3>💂🏻 Idiomas</h3>
+                    <ul>
+                        <li>Inglés para niños</li>
+                        <li>Inglés para adultos</li>
+                        <li>Español</li>
+                        <li>Valenciano</li>
+                    </ul>
+                </div> <!-- service -->
+            </div> <!-- services -->
         </section>
 
         <!-- Footer-->
         <footer class="footer">
-            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> e-mail-aqui@gmail.com</a>
+            <a href="mailto:angel.de.enrique@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> hola@centroestudiosazahar.es</a>
             <div><i class="fas fa-mobile-alt"></i> +34 627 034 888</div>
             <div class= "social-list-span">Siguenos en nuestras redes sociales:</div>
             <ul class="social-list">
